@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Edit Review</title>
+</head>
+
+<body class="b2">
+    <div class="conatiner1">
+        <img id="bookimg" src="<%= image %>" alt="cover Image" width="300" height="400">
+        <form action="/reviewUpdate" method="post">
+            <div class="conatiner2">
+                <div>
+                <label for="title">Title</label><br>
+                <input type="text" name="bookName" id="title" value="<%= title  %>" required></div><br>
+                <div><label for="author">Author</label><br>
+                <input type="text" name="authorName" id="author" value="<%= author  %>" required></div><br><br>
+                <div><label for="review">Update Your REVIEW!</label><br>
+                <textarea name="review" id="review" maxlength="2000" required><%= review %></textarea></div><br>
+                <div><label for="rating">Rate this Book ⭐ out of 10</label><br>
+                <input type="number" min="0" max="10" name="rating" value="<%= rating %>" required></div><br>
+                <input type="text" style="height: 0px; width: 0px; visibility: collapse; padding: 0; margin: 0; border: 0;" name="isbn" value="<%= isbn %>">
+                <input class="button" type="submit" value="Update">
+            </div>
+        </form>
+    </div>
+</body>
+
+<%- include('partials/footer.ejs'); -%>

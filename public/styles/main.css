@@ -1,0 +1,93 @@
+
+.b1{
+  background-color: #EEEDEB;
+}
+.b2{
+  background-color: #EEEDEB;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.container{
+  margin-top: 10px;
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: column;
+  align-content: flex-start;
+  align-self: flex-start;
+  align-items: flex-start; 
+}
+.conatiner1{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+#bookimg{
+  border: double;
+  border-width: 5px;
+  border-radius: 5%;
+  padding: 1;
+}
+#title{
+  width:250%;
+  border:double;
+  border-radius: 5px;
+}
+#author{
+  width:250%;
+  border:double;
+  border-radius: 5px;
+}
+#review{
+  height:40%;
+  width:250%;
+  border:double;
+  border-radius: 5px;
+  text-align: initial;
+}
+.button{
+  border: double;
+  border-color: darkgreen;
+  background-color: #EEEDEB;
+  border-radius: 5px;
+}
+.button:hover{
+  background-color: darkgreen;
+  color:#EEEDEB
+}
+@media (max-width:720px){
+  #footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
+  .b1{
+    background-color: #EEEDEB;
+  }
+  .b2{
+    background-color: #EEEDEB;
+    margin-top: 25%;
+  }
+  .conatiner1{
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      justify-content: center;
+      align-items:flex-start;
+  }
+  .container2{
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+  }
+
+  
+}
