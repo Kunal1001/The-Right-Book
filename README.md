@@ -44,7 +44,12 @@ create database books
 <p>4. create schema in that database</p>
 
 ```
-CREATE TABLE IF NOT EXISTS bookdetail (     isbn character varying(20)    title character varying(100)  author character varying(100)      review character varying(2000)      rating integer     CONSTRAINT bookdetail_pkey PRIMARY KEY (isbn) )
+CREATE TABLE IF NOT EXISTS bookdetail (isbn character varying(20),
+title character varying(100),
+author character varying(100),
+review character varying(2000),
+rating integer,
+CONSTRAINT bookdetail_pkey PRIMARY KEY (isbn) )
 ```
 
 <p>5. Run on localhost</p>
